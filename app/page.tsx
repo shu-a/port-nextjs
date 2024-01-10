@@ -12,7 +12,7 @@ export default function Home() {
         <div className="broder">etc</div>
       </header>
       <section className="border flex flex-row items-center justify-center mt-3 w-full h-full md:justify-between">
-        <div className="h-full border w-1/4 hidden md:flex items-center justify-center">
+        <div className="h-full border w-1/4 hidden lg:flex items-center justify-center">
           Left
         </div>
         <div className="border grid grid-cols-1 md:grid-cols-2 w-full h-full">
