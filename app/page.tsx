@@ -1,4 +1,3 @@
-import axios from "axios";
 import { Suspense } from "react";
 import Image from "next/image";
 import TopMenu from "@/app/ui/top-menu";
