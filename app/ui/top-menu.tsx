@@ -1,0 +1,18 @@
+"use client";
+
+import React from "react";
+
+const menuList = ["커뮤니티", "지식", "QnA", "공지사항"];
+const TopMenu = () => {
+  return (
+    <>
+      <ul className="flex flex-row list-none">
+        {menuList.map((menu) => (
+          <li key={menu} className="mr-8 lg:mr-12 text-lg last:mr-0">{menu}</li>
+        ))}
+      </ul>
+    </>
+  );
+};
+
+export default TopMenu;
