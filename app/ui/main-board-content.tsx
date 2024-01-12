@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  CalendarDaysIcon,
+  EyeIcon,
+  ChatBubbleOvalLeftEllipsisIcon,
+  HandThumbUpIcon,
+} from "@heroicons/react/24/outline";
 
 const MainBoardContent = ({
   content,
@@ -18,18 +24,34 @@ const MainBoardContent = ({
       <a href="#" className="flex flex-col p-3 border-b-2 border-gray-300">
         <section className="flex flex-row items-center justify-between">
           <section className="flex flex-row">
-            <div className="mr-3">유저: {content.user}</div>
-            <div className="mr-3">날짜: {content.date}</div>
-            <div className="">조회수: {content.view}</div>
+            <div className="mr-3 relative flex items-center justify-center">
+              {content.user}
+            </div>
+            <div className="mr-3 relative flex items-center justify-center">
+              <CalendarDaysIcon className="w-[18px] h-[18px] mr-1" />
+              {content.date}
+            </div>
+            <div className="relative flex items-center justify-center">
+              <EyeIcon className="w-[18px] h-[18px] mr-1" />
+              {content.view}
+            </div>
           </section>
           <section className="flex flex-row items-center">
-            <div className="mr-3">추천: {content.vote}</div>
-            <div>댓글: {content.commentCount}</div>
+            <div className="mr-3 relative flex items-center justify-center">
+              <HandThumbUpIcon className="w-[18px] h-[18px] mr-1" />
+              {content.vote}
+            </div>
+            <div className="relative flex items-center justify-center">
+              <ChatBubbleOvalLeftEllipsisIcon className="w-[18px] h-[18px] mr-1" />
+              {content.commentCount}
+            </div>
           </section>
         </section>
         <section className="flex flex-row items-center">
-          <section>
-            <div>{content.title}</div>
+          <section className="flex flex-row items-center min-w-0">
+            <div className="whitespace-nowrap text-ellipsis overflow-hidden">
+              {content.title}
+            </div>
           </section>
         </section>
       </a>

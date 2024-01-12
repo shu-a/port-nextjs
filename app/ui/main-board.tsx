@@ -19,9 +19,6 @@ interface Content {
   ];
 }
 
-interface Board {
-  result: [Content];
-}
 const MainBoard = async () => {
   const boardlist = await getTopMenu();
 
@@ -30,7 +27,7 @@ const MainBoard = async () => {
       {boardlist?.result?.content.map((board: Content) => (
         <div
           key={board.title}
-          className="flex flex-row items-center justify-center w-full min-h-[700px]"
+          className="flex flex-row items-center justify-center w-full min-h-[500px]"
         >
           <div
             key={board.title}

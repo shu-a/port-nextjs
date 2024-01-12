@@ -12,11 +12,12 @@ export const dynamic = "force-dynamic";
 
 const Page = async () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen min-w-[350px] flex-col items-center justify-between">
       {" "}
       {/* bg-[url(/bg2.png)] bg-no-repeat bg-[center_120px] lg:bg-[65%_center] lg:bg-[length:35%]  */}
       {/* <Image alt="" src={"/bg2.png"} fill={true} /> */}
-      <header className="flex flex-row items-center justify-between pl-20 pr-20 top-0 w-full h-[70px] sticky bg-[rgba(255,255,255,0.3)] backdrop-blur-xl border-b-[1px]  border-b-gray-200">
+      {/* header */}
+      <header className="flex flex-row items-center justify-between pl-20 pr-20 top-0 w-full h-[70px] sticky bg-[rgba(255,255,255,0.3)] backdrop-blur-xl border-b-[1px]  border-b-gray-200 z-50">
         <div className="">
           <label htmlFor="logo" className="sr-only">
             logo
@@ -38,19 +39,20 @@ const Page = async () => {
           <TopUserMenu />
         </div>
       </header>
+      {/* center */}
       <section className="flex flex-row items-center justify-center mt-2 w-full h-full md:justify-between">
-        <div className="h-full w-1/4 hidden lg:flex items-center justify-center">
-          Left
-        </div>
+        {/* left */}
+        <div className="h-full w-1/4 hidden lg:flex items-center justify-center"></div>
+        {/* content */}
         <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
           <Suspense fallback={<MainBoardSkeleton />}>
             <MainBoard />
           </Suspense>
         </div>
-        <div className="w-1/4 h-full hidden lg:flex items-center justify-center">
-          Right
-        </div>
+        {/* right */}
+        <div className="w-1/4 h-full hidden lg:flex items-center justify-center"></div>
       </section>
+      {/* footer */}
       <div
         className={`flex flex-row items-center justify-center pl-20 pr-20 bottom-0 w-full h-[150px]`}
       >
