@@ -8,6 +8,8 @@ import TopUserMenu from "@/app/ui/top-usermenu";
 import { MainBoardSkeleton } from "@/app/ui/skeletons";
 import MainBoard from "./ui/main-board";
 
+export const dynamic = "force-dynamic";
+
 const Page = async () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
