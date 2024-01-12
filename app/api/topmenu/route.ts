@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
+import { sleep } from "@/app/lib/sleep";
 
 export async function GET(req: NextRequest) {
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  await sleep(3000);
 
   return NextResponse.json({
     result: {
