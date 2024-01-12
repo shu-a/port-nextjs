@@ -27,7 +27,7 @@ const MainBoard = async () => {
 
   return (
     <>
-      {boardlist.result.content.map((board: Content) => (
+      {boardlist?.result?.content.map((board: Content) => (
         <div
           key={board.title}
           className="flex flex-row items-center justify-center w-full min-h-[700px]"
