@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { getTopMenu } from "../api/apis";
+import { getTopMenu } from "../apis";
 import { BoardHeaderSkeleton } from "./skeletons";
 import BoardHeader from "./board/board-header";
 import MainBoardContent from "./main-board-content";
