@@ -4,6 +4,7 @@
 
 :root {
   /* background: linear-gradient(0.375turn, #f0feff, #fff5f5, #f4f5ff); */
+  background: linear-gradient(to bottom, #ffffffcb, #ffffffaf);
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
