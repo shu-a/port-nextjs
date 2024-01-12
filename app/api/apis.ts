@@ -6,6 +6,11 @@ import axios from "axios";
 // };
 
 export const getTopMenu = async () => {
-  const res = await fetch(`${process.env.BASE_URL}/api/topmenu`);
+  const config = {
+    headers: {
+      Accept: "application/json",
+    },
+  };
+  const res = await fetch(`${process.env.BASE_URL}/api/topmenu`, config);
   return res.json();
 };
