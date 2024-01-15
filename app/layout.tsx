@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={myFont.className}>{children}</body>
+    <html lang="ko" suppressHydrationWarning>
+      {/* <body className={myFont.className}>{children}</body> 원본 */}
+      <body className={myFont.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
