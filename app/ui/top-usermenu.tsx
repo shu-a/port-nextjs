@@ -3,20 +3,18 @@ import React from "react";
 const TopUserMenu = () => {
   return (
     <>
-      <div>
-        <button className="md:mr-7">로그인</button>
-        <button className="hidden md:inline-block">회원가입</button>
-        {/* <button>Scrap</button>
+      <button className="md:ml-3 mr-7">로그인</button>
+      <button className="hidden md:inline-block">회원가입</button>
+      {/* <button>Scrap</button>
         <button>Notification</button>
         <button>Avatar</button> */}
-        {/* 프로필
+      {/* 프로필
         계정 관리
         활동 내역
         이력서 관리
         관심 포지션
         포지션 지원이력
         로그아웃 */}
-      </div>
     </>
   );
 };
