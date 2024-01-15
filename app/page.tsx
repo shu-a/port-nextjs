@@ -16,9 +16,9 @@ const Page = async () => {
       {/* bg-[url(/bg2.png)] bg-no-repeat bg-[center_120px] lg:bg-[65%_center] lg:bg-[length:35%]  */}
       {/* <Image alt="" src={"/bg2.png"} fill={true} /> */}
       {/* header */}
-      <header className="flex flex-row items-center justify-center top-0 w-full h-[70px] sticky bg-[rgba(255,255,255,0.3)] backdrop-blur-xl border-b-[1px]  border-b-gray-200 z-50">
+      <header className="flex flex-row items-center justify-center top-0 w-full h-[70px] sticky bg-[rgba(255,255,255,0.3)] dark:bg-[rgba(0,0,0,0.3)] backdrop-blur-xl border-b-[1px] border-b-gray-200 z-50">
         <nav className="flex flex-row items-center justify-between pl-10 pr-10 w-[1024px]">
-          <div className="min-w-[100px]">
+          <div className="min-w-[100px] dark:invert">
             <label htmlFor="logo" className="sr-only">
               logo
             </label>
@@ -45,7 +45,7 @@ const Page = async () => {
         {/* left */}
         <div className="w-[180px] h-full hidden xl:flex xl:items-center xl:justify-center"></div>
         {/* content */}
-        <div className="grid grid-cols-1h-full md:grid-cols-2 md:w-[1024px]">
+        <div className="grid grid-cols-1 h-full md:grid-cols-2 md:w-[1024px]">
           <Suspense fallback={<MainBoardSkeleton />}>
             <MainBoard />
           </Suspense>
