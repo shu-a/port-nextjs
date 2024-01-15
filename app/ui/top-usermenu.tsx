@@ -3,7 +3,7 @@ import React from "react";
 const TopUserMenu = () => {
   return (
     <>
-      <button className="md:ml-3 mr-7">로그인</button>
+      <button className="md:ml-3 md:mr-7">로그인</button>
       <button className="hidden md:inline-block">회원가입</button>
       {/* <button>Scrap</button>
         <button>Notification</button>

@@ -27,13 +27,13 @@ const Page = async () => {
               <Image alt="logo" src={"/next.svg"} width={100} height={20.3} />
             </a>
           </div>
-          <div className="hidden md:block whitespace-nowrap ml-3 w-1/2 max-w-1/2">
+          <div className="hidden md:block md:whitespace-nowrap md:ml-3 md:w-1/2 md:max-w-1/2">
             <TopMenu />
           </div>
-          <div className="hidden md:block ml-3">
+          <div className="hidden md:block md:ml-3">
             <TopSearch />
           </div>
-          <div className="hidden md:block ml-3">
+          <div className="hidden md:block md:ml-3">
             <DarkMode />
           </div>
           <div className="block whitespace-nowrap">
@@ -44,15 +44,15 @@ const Page = async () => {
       {/* center */}
       <div className="flex flex-row items-center justify-center mt-2 w-full h-full">
         {/* left */}
-        <div className="w-[180px] h-full hidden xl:flex items-center justify-center"></div>
+        <div className="w-[180px] h-full hidden xl:flex xl:items-center xl:justify-center"></div>
         {/* content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 w-[1024px] h-full">
+        <div className="grid grid-cols-1 h-full md:grid-cols-2 md:w-[1024px]">
           <Suspense fallback={<MainBoardSkeleton />}>
             <MainBoard />
           </Suspense>
         </div>
         {/* right */}
-        <div className="w-[180px] h-full hidden xl:flex items-center justify-center"></div>
+        <div className="w-[180px] h-full hidden xl:flex xl:items-center xl:justify-center"></div>
       </div>
       {/* footer */}
       <div
