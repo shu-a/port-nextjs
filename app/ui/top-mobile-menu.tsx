@@ -6,8 +6,14 @@ import TopMobileMenuList from "./top-mobile-menu-list";
 
 const TopMobileMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const menuClose = () => {
-    setShowMenu(false);
+  const menuClose = (e: React.MouseEvent) => {
+    switch ((e.target as Element).id) {
+      case "top":
+      case "close":
+      case "closeIcon":
+        setShowMenu(false);
+        break;
+    }
   };
 
   return (
@@ -19,7 +25,8 @@ const TopMobileMenu = () => {
       >
         <Bars3Icon className="h-[32px] w-[32px]" />
       </button>
-      {showMenu && <TopMobileMenuList menuClose={menuClose} />}
+      <TopMobileMenuList menuClose={menuClose} showMenu={showMenu} />
+      {/* {showMenu && <TopMobileMenuList menuClose={menuClose} showMenu={showMenu} />} */}
       {/* <button>Scrap</button>
         <button>Notification</button>
         <button>Avatar</button> */}
