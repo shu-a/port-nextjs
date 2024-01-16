@@ -7,23 +7,24 @@ import DarkMode from "@/app/ui/darkmode";
 import TopUserMenu from "@/app/ui/top-usermenu";
 import { MainBoardSkeleton } from "@/app/ui/skeletons";
 import MainBoard from "./ui/main-board";
+import TopMobileMenu from "./ui/top-mobile-menu";
 
 export const dynamic = "force-dynamic";
 
 const Page = async () => {
   return (
-    <main className="flex min-h-screen min-w-[350px] flex-col items-center justify-between dark:bg-gray-950">
+    <main className="flex min-h-screen min-w-[350px] flex-col items-center justify-between dark:bg-gray-800">
       {/* bg-[url(/bg2.png)] bg-no-repeat bg-[center_120px] lg:bg-[65%_center] lg:bg-[length:35%]  */}
       {/* <Image alt="" src={"/bg2.png"} fill={true} /> */}
       {/* header */}
-      <header className="flex flex-row items-center justify-center top-0 w-full h-[70px] sticky bg-[rgba(255,255,255,0.3)] dark:bg-[rgba(0,0,0,0.3)] backdrop-blur-xl border-b-[1px] border-b-gray-200 z-50">
+      <header className="flex flex-row items-center justify-center top-0 w-full h-[70px] sticky bg-[rgba(255,255,255,0.3)] dark:bg-[rgba(0,0,0,0.3)] backdrop-blur-xl border-b-[1px] border-b-gray-200 dark:border-b-gray-500 z-50">
         <nav className="flex flex-row items-center justify-between pl-10 pr-10 w-[1024px]">
-          <div className="min-w-[100px] dark:invert">
+          <div className="min-w-[100px] flex items-center justify-center dark:invert">
             <label htmlFor="logo" className="sr-only">
               logo
             </label>
             <a href="/" rel="logo">
-              <Image alt="logo" src={"/next.svg"} width={100} height={20.3} />
+              <Image alt="logo" src={"/ths.png"} width={100} height={20.3} />
             </a>
           </div>
           <div className="hidden md:block md:whitespace-nowrap md:ml-3 md:w-1/2 md:max-w-1/2">
@@ -35,8 +36,11 @@ const Page = async () => {
           <div className="hidden md:block md:ml-3">
             <DarkMode />
           </div>
-          <div className="block whitespace-nowrap">
+          <div className="hidden md:whitespace-nowrap md:block">
             <TopUserMenu />
+          </div>
+          <div className="flex items-center justify-center md:hidden">
+            <TopMobileMenu />
           </div>
         </nav>
       </header>
