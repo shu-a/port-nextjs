@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { sleep } from "@/app/lib/sleep";
 
 export async function GET(req: NextRequest) {
+  await sleep(1000);
   // await sleep(30000);
 
   return NextResponse.json({

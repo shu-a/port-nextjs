@@ -19,12 +19,12 @@ const Page = async () => {
       {/* header */}
       <header className="flex flex-row items-center justify-center top-0 w-full h-[70px] sticky bg-[rgba(255,255,255,0.3)] dark:bg-[rgba(0,0,0,0.3)] backdrop-blur-xl border-b-[1px] border-b-gray-200 dark:border-b-gray-500 z-50">
         <nav className="flex flex-row items-center justify-between pl-10 pr-10 w-[1024px]">
-          <div className="min-w-[100px] flex items-center justify-center dark:invert">
+          <div className="min-w-[80px] flex items-center justify-center dark:invert">
             <label htmlFor="logo" className="sr-only">
               logo
             </label>
             <a href="/" rel="logo">
-              <Image alt="logo" src={"/ths.png"} width={100} height={20.3} />
+              <Image alt="logo" src={"/ths.png"} width={80} height={20.3} />
             </a>
           </div>
           <div className="hidden md:block md:whitespace-nowrap md:ml-3 md:w-1/2 md:max-w-1/2">
