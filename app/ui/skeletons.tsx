@@ -24,7 +24,7 @@ export const BoardSkeleton = () => {
         <div>
           <BoardHeaderSkeleton />
         </div>
-        <div className={`flex items-center justify-center h-[400px] mt-3`}>
+        <div className={`flex items-center justify-center h-[400px]`}>
           <div className="flex flex-col w-full h-full">
             <div>
               <div className="flex flex-col p-3">
@@ -60,7 +60,7 @@ export const BoardSkeleton = () => {
 export const BoardHeaderSkeleton = () => {
   return (
     <div
-      className={`${pulse2Xl} relative overflow-hidden w-full h-[80px]`}
+      className={`${pulse2Xl} relative overflow-hidden w-full h-[60px]`}
     ></div>
   );
 };

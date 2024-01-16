@@ -49,7 +49,7 @@ const Page = async () => {
         {/* left */}
         <div className="w-[180px] h-full hidden xl:flex xl:items-center xl:justify-center"></div>
         {/* content */}
-        <div className="grid grid-cols-1 h-full md:grid-cols-2 md:w-[1024px]">
+        <div className="grid grid-cols-1 w-full h-full md:grid-cols-2 md:w-[1024px]">
           <Suspense fallback={<MainBoardSkeleton />}>
             <MainBoard />
           </Suspense>

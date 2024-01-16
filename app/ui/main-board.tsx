@@ -38,7 +38,7 @@ const MainBoard = async () => {
                 <BoardHeader title={board.title} />
               </Suspense>
             </div>
-            <div className="flex items-center justify-center h-[400px] mt-3">
+            <div className="flex items-center justify-center h-[400px]">
               <div className="flex flex-col w-full h-full">
                 {board?.content.length > 0 &&
                   board.content.map((content) => (
