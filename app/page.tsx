@@ -13,7 +13,7 @@ export const dynamic = "force-dynamic";
 
 const Page = async () => {
   return (
-    <main className="flex min-h-screen min-w-[350px] flex-col items-center justify-between dark:bg-gray-800">
+    <main className="flex min-h-screen min-w-[350px] flex-col items-center justify-between dark:bg-gray-800 transition-colors duration-75">
       {/* bg-[url(/bg2.png)] bg-no-repeat bg-[center_120px] lg:bg-[65%_center] lg:bg-[length:35%]  */}
       {/* <Image alt="" src={"/bg2.png"} fill={true} /> */}
       {/* header */}

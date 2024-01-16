@@ -27,12 +27,12 @@ const ThemeChanger = () => {
       {currentTheme === "light" ? (
         <MoonIcon
           onClick={() => setTheme("dark")}
-          className={`w-[24px] h-[24px] cursor-pointer`}
+          className={`w-[24px] h-[24px] cursor-pointer transition-[fill,stroke] fill-white stroke-black hover:fill-yellow-400 hover:stroke-yellow-400`}
         />
       ) : (
         <SunIcon
           onClick={() => setTheme("light")}
-          className={`w-[24px] h-[24px] cursor-pointer`}
+          className={`w-[24px] h-[24px] cursor-pointer transition-[fill,stroke] fill-white stroke-white hover:fill-yellow-400 hover:stroke-yellow-400`}
         />
       )}
     </div>

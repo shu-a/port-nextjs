@@ -15,16 +15,17 @@ const TopMobileMenuList = ({
 }) => {
   return (
     <div
-      className={`absolute top-0 left-0 w-full h-screen p-3 flex justify-center ${
+      className={`absolute top-0 left-0 w-full h-screen p-3 flex justify-center transition-[visibility,opacity] z-20 bg-[rgba(0,0,0,0.3)] ${
         showMenu ? "visible opacity-100" : "invisible opacity-0"
-      } transition-all ease-in-out delay-150 duration-150 z-20 bg-[rgba(0,0,0,0.3)]`}
+      }`}
       onClick={menuClose}
       id="top"
     >
-      {/* transition ease-in-out delay-150 duration-300 */}
       <div
-        className={`bg-white dark:bg-gray-700 shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] rounded-xl backdrop-blur-xl z-30 min-w-[300px] w-full h-[500px] transition-all ease-in-out delay-150 duration-150 transform ${
-          showMenu ? "visible opacity-100 scale-100" : "invisible opacity-0 scale-75"
+        className={`bg-white dark:bg-gray-700 shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] rounded-xl backdrop-blur-xl z-30 min-w-[300px] w-full h-[500px] transition-[visibility,opacity,transform] transform ${
+          showMenu
+            ? "visible opacity-100 scale-100"
+            : "invisible opacity-0 scale-90"
         }`}
       >
         {/* Top */}
@@ -40,7 +41,7 @@ const TopMobileMenuList = ({
 
           {/* 닫기 버튼 */}
           <div
-            className="flex items-center justify-center rounded-lg w-[32px] h-[32px] bg-gray-200 mr-6 dark:bg-gray-400"
+            className="flex items-center justify-center rounded-lg w-[32px] h-[32px] bg-gray-200 mr-6 dark:bg-gray-400 cursor-pointer hover:bg-gray-300 transition-colors"
             onClick={menuClose}
             id="close"
           >
