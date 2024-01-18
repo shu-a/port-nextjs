@@ -92,7 +92,10 @@ const TopMobileMenuList = ({
         <div className="flex flex-col pl-8 pr-8 mb-5">
           {menus &&
             menus.map((menu) => (
-              <button key={menu} className="flex items-center pt-1 pb-1 transition-colors hover:text-gray-500">
+              <button
+                key={menu}
+                className="flex items-center pt-1 pb-1 transition-colors hover:text-gray-500"
+              >
                 {menu}
               </button>
             ))}
@@ -101,7 +104,10 @@ const TopMobileMenuList = ({
         <div className="border-t flex flex-col pl-8 pr-8 pt-5 pb-5">
           {loginMenus &&
             loginMenus.map((menu) => (
-              <button key={menu.title} className="flex items-center pt-1 pb-1 transition-colors hover:text-gray-500">
+              <button
+                key={menu.title}
+                className="flex items-center pt-1 pb-1 transition-colors hover:text-gray-500"
+              >
                 {menu.title}
               </button>
             ))}

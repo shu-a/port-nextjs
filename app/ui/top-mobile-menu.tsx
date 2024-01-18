@@ -18,6 +18,9 @@ const TopMobileMenu = () => {
 
   return (
     <>
+      <label htmlFor="hamburger" className="sr-only">
+        mobile menu
+      </label>
       <button
         onClick={(e) => {
           setShowMenu(!showMenu);
@@ -26,17 +29,6 @@ const TopMobileMenu = () => {
         <Bars3Icon className="h-[32px] w-[32px]" />
       </button>
       <TopMobileMenuList menuClose={menuClose} showMenu={showMenu} />
-      {/* {showMenu && <TopMobileMenuList menuClose={menuClose} showMenu={showMenu} />} */}
-      {/* <button>Scrap</button>
-        <button>Notification</button>
-        <button>Avatar</button> */}
-      {/* 프로필
-        계정 관리
-        활동 내역
-        이력서 관리
-        관심 포지션
-        포지션 지원이력
-        로그아웃 */}
     </>
   );
 };

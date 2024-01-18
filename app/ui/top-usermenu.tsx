@@ -9,20 +9,20 @@ const TopUserMenu = () => {
 
   if (session && session.user) {
     return (
-      <>
-        <button className="md:ml-3 md:mr-7" onClick={() => signOut()}>
+      <div className="md:ml-3 md:mr-7">
+        <button className="w-[100px]" onClick={() => signOut()}>
           로그아웃
         </button>
-      </>
+      </div>
     );
   }
 
   return (
-    <>
-      <button className="md:ml-3 md:mr-7" onClick={() => signIn()}>
+    <div className="md:ml-3 md:mr-7">
+      <button className="w-[100px]" onClick={() => signIn()}>
         로그인
       </button>
-    </>
+    </div>
   );
 };
 
