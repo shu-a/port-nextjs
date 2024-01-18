@@ -1,7 +1,7 @@
 import React from 'react';
 
-const BoardTop = () => {
+const Page = () => {
   return <div></div>;
 };
 
-export default BoardTop;
+export default Page;

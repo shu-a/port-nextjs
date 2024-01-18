@@ -1,7 +1,7 @@
 import React from 'react';
 
-const BoardTop = () => {
+const SignUp = () => {
   return <div></div>;
 };
 
-export default BoardTop;
+export default SignUp;

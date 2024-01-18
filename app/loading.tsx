@@ -1,4 +1,4 @@
-import {MainBoardSkeleton} from '@/app/ui/skeletons';
+import { MainBoardSkeleton } from '@/app/ui/skeletons';
 
 export default function Loading() {
   return <MainBoardSkeleton />;

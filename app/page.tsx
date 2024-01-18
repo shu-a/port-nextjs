@@ -1,15 +1,15 @@
-import { Suspense } from "react";
-import Image from "next/image";
-import TopMenu from "@/app/ui/top-menu";
-import Footer from "@/app/ui/footer";
-import TopSearch from "@/app/ui/top-search";
-import DarkMode from "@/app/ui/darkmode";
-import TopUserMenu from "@/app/ui/top-usermenu";
-import { MainBoardSkeleton } from "@/app/ui/skeletons";
-import MainBoard from "./ui/main-board";
-import TopMobileMenu from "./ui/top-mobile-menu";
+import { Suspense } from 'react';
+import Image from 'next/image';
+import TopMenu from '@/app/ui/top-menu';
+import Footer from '@/app/ui/footer';
+import TopSearch from '@/app/ui/top-search';
+import DarkMode from '@/app/ui/darkmode';
+import TopUserMenu from '@/app/ui/top-usermenu';
+import { MainBoardSkeleton } from '@/app/ui/skeletons';
+import MainBoard from './ui/main-board';
+import TopMobileMenu from './ui/top-mobile-menu';
 
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic';
 
 const Page = async () => {
   return (
@@ -24,7 +24,7 @@ const Page = async () => {
               logo
             </label>
             <a href="/" rel="logo">
-              <Image alt="logo" src={"/ths.png"} width={80} height={20.3} />
+              <Image alt="logo" src={'/next.svg'} width={80} height={20.3} />
             </a>
           </div>
           <div className="hidden md:block md:whitespace-nowrap md:ml-3 md:w-1/2 md:max-w-1/2">

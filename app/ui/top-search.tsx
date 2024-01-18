@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import React from "react";
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import React from 'react';
 
 const TopSearch = () => {
   return (

@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 import {
   CalendarDaysIcon,
   EyeIcon,
   ChatBubbleOvalLeftEllipsisIcon,
   HandThumbUpIcon,
-} from "@heroicons/react/24/outline";
+} from '@heroicons/react/24/outline';
 
 const MainBoardContent = ({
   content,
@@ -21,7 +21,7 @@ const MainBoardContent = ({
 }) => {
   return (
     <div key={content.seq}>
-      <a href="#" className="flex flex-col p-3 border-b-2 border-gray-300">
+      <a href="#" className="flex flex-col p-3 border-b border-gray-300">
         <section className="flex flex-row items-center justify-between">
           <section className="flex flex-row">
             <div className="mr-3 relative flex items-center justify-center">
