@@ -20,7 +20,7 @@ const ThemeChanger = () => {
   const currentTheme = theme === 'system' ? systemTheme : theme;
 
   return (
-    <div className="flex items-center justify-center">
+    <>
       <label htmlFor="theme" className="sr-only">
         theme
       </label>
@@ -35,7 +35,7 @@ const ThemeChanger = () => {
           className={`w-[24px] h-[24px] cursor-pointer transition-[fill,stroke] fill-white stroke-white hover:fill-yellow-400 hover:stroke-yellow-400`}
         />
       )}
-    </div>
+    </>
   );
 };
 

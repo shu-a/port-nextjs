@@ -19,7 +19,7 @@ const Page = async () => {
       {/* header */}
       <header className="flex flex-row items-center justify-center top-0 w-full h-[70px] sticky bg-[rgba(255,255,255,0.3)] dark:bg-[rgba(0,0,0,0.3)] backdrop-blur-xl border-b-[1px] border-b-gray-200 dark:border-b-gray-500 z-50">
         <nav className="flex flex-row items-center justify-between pl-10 pr-10 w-[1024px]">
-          <div className="min-w-[80px] flex items-center justify-center dark:invert">
+          <div className="relative min-w-[80px] flex items-center justify-center dark:invert left-0">
             <label htmlFor="logo" className="sr-only">
               logo
             </label>
@@ -27,16 +27,18 @@ const Page = async () => {
               <Image alt="logo" src={'/next.svg'} width={80} height={20.3} />
             </a>
           </div>
-          <div className="hidden md:block md:whitespace-nowrap md:ml-3 md:w-1/2 md:max-w-1/2">
+          <div className="hidden md:whitespace-nowrap md:flex md:flex-row md:justify-around md:w-[350px] md:min-w-[350px]">
             <TopMenu />
           </div>
-          <div className="hidden md:block md:ml-3">
-            <TopSearch />
+          <div className="hidden md:flex md:flex-row md:items-center md:justify-between md:max-w-[350px]">
+            <div className="hidden md:block md:mr-9">
+              <TopSearch />
+            </div>
+            <div className="hidden md:flex md:items-center md:justify-center md:min-w-[24px]">
+              <DarkMode />
+            </div>
           </div>
-          <div className="hidden md:block md:ml-3">
-            <DarkMode />
-          </div>
-          <div className="hidden md:whitespace-nowrap md:block">
+          <div className="hidden md:whitespace-nowrap md:block md:right-0">
             <TopUserMenu />
           </div>
           <div className="flex items-center justify-center md:hidden">

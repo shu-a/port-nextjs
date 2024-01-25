@@ -8,7 +8,7 @@ import NextAuthProviders from './components/NextAuthProviders';
 const inter = Inter({ subsets: ['latin'] });
 
 const myFont = localFont({
-  src: './font/Title_Light.otf',
+  src: './font/S-CoreDream-3Light.woff',
   display: 'swap',
 });
 
@@ -24,8 +24,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" suppressHydrationWarning>
-      {/* <body className={myFont.className}>{children}</body> 원본 */}
       <body className={myFont.className}>
+      {/* <body className={inter.className}> */}
         <NextAuthProviders>
           <Providers>{children}</Providers>
         </NextAuthProviders>
