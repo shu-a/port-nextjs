@@ -4,7 +4,7 @@ headers.set('x-api-key', process.env['X_API_KEY'] as string);
 
 export const getTopMenu = async () => {
   try {
-    const res = await fetch(`${process.env.API_URL}/api/topmenu`, {
+    const res = await fetch(`${process.env.PROTOCOL}//${process.env.VERCEL_URL}/api/topmenu`, {
       method: 'GET',
       headers,
     });
