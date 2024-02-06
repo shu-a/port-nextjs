@@ -8,7 +8,7 @@ import NextAuthProviders from './components/NextAuthProviders';
 const inter = Inter({ subsets: ['latin'] });
 
 const myFont = localFont({
-  src: './font/S-CoreDream-3Light.woff',
+  src: './font/Pretendard-SemiBold.woff',
   display: 'swap',
 });
 
